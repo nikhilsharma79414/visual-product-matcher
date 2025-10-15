@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Product Matcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Visual Product Matcher</h1>
+
+    <div class="upload-section">
+      <label for="fileInput">Upload Image:</label>
+      <input type="file" id="fileInput" accept="image/*" />
+
+      <p>or</p>
+
+      <label for="urlInput">Enter Image URL:</label>
+      <input type="text" id="urlInput" placeholder="https://example.com/image.jpg" />
+      
+      <button id="uploadBtn">Upload</button>
+    </div>
+
+    <!-- Image preview box -->
+    <div class="image-preview" id="imagePreview">
+      <p>No image selected</p>
+    </div>
+
+    <button id="searchBtn" class="search-btn">Find Similar Products</button>
+
+    <div id="loading" class="loading">Finding similar images...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
